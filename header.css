@@ -1,0 +1,284 @@
+.header{
+    height: 62px;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.left-section{
+   display: flex;
+   align-items: center;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.youtube-icon-menu{
+    cursor: pointer;
+    height: 23px;
+    margin-left: 29px;
+    margin-right: 28px;
+}
+
+.youtube-icon-menu:hover{
+    background-color: rgb(238, 236, 236);
+    
+}
+
+.youtube-icon-logo{
+    cursor: pointer;
+    height: 22px;
+    width: 100%;
+}
+
+
+
+.middle-section{
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 35px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    max-width: 48%;
+}
+
+.search{
+    flex: 1;
+    height: 60%;
+    width: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-color: rgb(205, 204, 204);
+    padding-left: 18px;
+    font-size: 18px;
+    color: rgb(39, 37, 37);
+    padding-right:23px;
+    border-style: solid;
+    box-shadow: inset 1px 1px 3px rgb(251, 249, 249);
+}
+
+.search::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 18px;
+    color: grey;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 68%;
+    width: 68px;
+    margin-right: 20px;
+    margin-left: -2px;
+    background-color: rgb(255, 251, 251);
+    border-bottom-right-radius: 19px;
+    border-top-right-radius: 19px;
+    border-style: solid;
+    border-color: rgb(205, 204, 204) ;
+    position: relative;
+    
+}
+
+.mic-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(246, 242, 242);
+    border-radius: 25px;      
+    border-style: solid;
+    border-color: rgb(255, 251, 251);
+    position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 0px;
+}
+
+.search-icon:hover .tool-tip,
+.mic-icon:hover .tool-tip,
+.upload-icon-container:hover .tool-tip,
+.notification-container:hover .tool-tip{
+    transition-duration: 210ms;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+}
+
+
+.search-icon .tool-tip
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 130%;
+    color: white;
+    font-family: Roboto, Arial;
+    size: 10px;
+    background-color: rgb(99, 97, 97);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;  
+    
+}
+
+.mic-icon .tool-tip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130%;
+    color: white;
+    font-family: Roboto, Arial;
+    size: 10px;
+    background-color: rgb(99, 97, 97);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;  
+      
+}
+
+.create-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 25px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: -40%;
+}
+
+.upload-icon-container .tool-tip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 110%;
+    right: 9%;
+    color: white;
+    font-family: Roboto, Arial;
+    size: 10px;
+    font-size: 13.5px;
+    background-color: rgb(99, 97, 97);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;  
+}
+
+.end-section{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-right: 31px;
+    justify-content: space-between;
+    justify-items: center;
+    flex-shrink: 0;
+}
+
+.bell-icon{
+    cursor: pointer;
+    height: 56px;
+    width: 55px;
+    padding-left: -5%;
+    padding-right: -5%;
+    padding-top: -5%;
+    padding-bottom: -5%;
+}
+
+.notification-container{
+    cursor: pointer;
+    position: relative;
+}
+
+.notification-number{
+    position: absolute;
+    color: white;
+    border-radius: 50px;
+    background-color: red;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    top: 12px;
+    right: 20%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.notification-container .tool-tip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-family: Roboto, Arial;
+    background-color: rgb(99, 97, 97);
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none; 
+}
+
+
+.search-icon:hover{
+    background-color: rgb(213, 222, 222);
+    background-size: 20px;
+}
+
+.mic-icon:hover{
+    background-color: rgb(213, 222, 222);
+    size: 0px;
+}
+
+.bell-icon:hover{
+    background-color: rgb(213, 222, 222);
+    border-radius: 70%;
+    background-size: 100%;
+}
+
+.create-icon:hover{
+    background-color: rgb(213, 222, 222);
+    border-radius: 70%;
+    
+}
+
+.account-icon{
+    cursor: pointer;
+    height: 33px;
+    width: 33px;
+}
